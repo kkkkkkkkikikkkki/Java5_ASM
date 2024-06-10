@@ -12,10 +12,12 @@ import java.util.List;
 @NoArgsConstructor
 @Getter
 @Setter
-@Entity(name = "Accounts")
+@Entity
+@Table(name = "Accounts")
 public class Account {
 
     @Id
+    @Column(name = "Username")
     private String username;
 
     @Column(name = "Password")
@@ -35,7 +37,4 @@ public class Account {
 
     @Column(name = "Admin")
     private boolean admin;
-
-    @OneToMany(mappedBy = "account")
-    private List<Order> orders;
 }
