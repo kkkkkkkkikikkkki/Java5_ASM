@@ -257,7 +257,7 @@ body {
                             </a>
                         </li>
                         <li>
-                            <a href="shoppingCart.html" class="icon-link">
+                            <a href="cart" class="icon-link">
                                 <img src="/image/8666616_shopping_cart_icon.svg" alt="">
                             </a>
                         </li>
