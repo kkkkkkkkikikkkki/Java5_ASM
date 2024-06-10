@@ -74,13 +74,7 @@
             <option value="no" >No</option>
           </select>
         </div>
-        <div class="mb-3">
-          <label for="admin" class="form-label">Admin</label>
-          <select id="admin">
-            <option value="admin">Yes</option>
-            <option value="user" >No</option>
-          </select>
-        </div>
+
 
         <button type="submit" class="btn btn-primary submit-btn">Submit</button>
       </form>
