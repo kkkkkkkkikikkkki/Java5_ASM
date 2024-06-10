@@ -1,172 +1,85 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+  <meta charset="UTF-8">
+  <title>Student Registration</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
-    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.min.css">
-    <style>
-    	.card-registration .select-input.form-control[readonly]:not([disabled]) {
-font-size: 1rem;
-line-height: 2.15;
-padding-left: .75em;
-padding-right: .75em;
-}
-.card-registration .select-arrow {
-top: 13px;
-}
-    </style>
+  <style>
+    body {
+      background: #6a11cb;
+      background: -webkit-linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
+      background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
+    }
+
+    .container {
+      max-width: 500px;
+      margin: 0 auto;
+      padding-top: 30px;
+
+    }
+
+    .card-title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      text-align: center;
+      color: #ffffff;
+    }
+
+    .form-label {
+      font-weight: bold;
+      text-align: center;
+      color: #ffffff;
+    }
+
+    .submit-btn {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
 </head>
 <body>
-<section class="h-100 bg-dark">
-  <div class="container py-5 h-100">
-    <div class="row d-flex justify-content-center align-items-center h-100">
-      <div class="col">
-        <div class="card card-registration my-4">
-          <div class="row g-0">
-            <div class="col-xl-6 d-none d-xl-block">
-              <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-registration/img4.webp"
-                alt="Sample photo" class="img-fluid"
-                style="border-top-left-radius: .25rem; border-bottom-left-radius: .25rem;" />
-            </div>
-            <div class="col-xl-6">
-              <div class="card-body p-md-5 text-black">
-                <h3 class="mb-5 text-uppercase">Student registration form</h3>
-
-                <div class="row">
-                  <div class="col-md-6 mb-4">
-                    <div data-mdb-input-init class="form-outline">
-                      <input type="text" id="form3Example1m" class="form-control form-control-lg" />
-                      <label class="form-label" for="form3Example1m">First name</label>
-                    </div>
-                  </div>
-                  <div class="col-md-6 mb-4">
-                    <div data-mdb-input-init class="form-outline">
-                      <input type="text" id="form3Example1n" class="form-control form-control-lg" />
-                      <label class="form-label" for="form3Example1n">Last name</label>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="row">
-                  <div class="col-md-6 mb-4">
-                    <div data-mdb-input-init class="form-outline">
-                      <input type="text" id="form3Example1m1" class="form-control form-control-lg" />
-                      <label class="form-label" for="form3Example1m1">Mother's name</label>
-                    </div>
-                  </div>
-                  <div class="col-md-6 mb-4">
-                    <div data-mdb-input-init class="form-outline">
-                      <input type="text" id="form3Example1n1" class="form-control form-control-lg" />
-                      <label class="form-label" for="form3Example1n1">Father's name</label>
-                    </div>
-                  </div>
-                </div>
-
-                <div data-mdb-input-init class="form-outline mb-4">
-                  <input type="text" id="form3Example8" class="form-control form-control-lg" />
-                  <label class="form-label" for="form3Example8">Address</label>
-                </div>
-
-                <div class="d-md-flex justify-content-start align-items-center mb-4 py-2">
-
-                  <h6 class="mb-0 me-4">Gender: </h6>
-
-                  <div class="form-check form-check-inline mb-0 me-4">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="femaleGender"
-                      value="option1" />
-                    <label class="form-check-label" for="femaleGender">Female</label>
-                  </div>
-
-                  <div class="form-check form-check-inline mb-0 me-4">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="maleGender"
-                      value="option2" />
-                    <label class="form-check-label" for="maleGender">Male</label>
-                  </div>
-
-                  <div class="form-check form-check-inline mb-0">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="otherGender"
-                      value="option3" />
-                    <label class="form-check-label" for="otherGender">Other</label>
-                  </div>
-
-                </div>
-
-                <div class="row">
-                  <div class="col-md-6 mb-4">
-
-                    <select data-mdb-select-init>
-                      <option value="1">State</option>
-                      <option value="2">Option 1</option>
-                      <option value="3">Option 2</option>
-                      <option value="4">Option 3</option>
-                    </select>
-
-                  </div>
-                  <div class="col-md-6 mb-4">
-
-                    <select data-mdb-select-init>
-                      <option value="1">City</option>
-                      <option value="2">Option 1</option>
-                      <option value="3">Option 2</option>
-                      <option value="4">Option 3</option>
-                    </select>
-
-                  </div>
-                </div>
-
-                <div data-mdb-input-init class="form-outline mb-4">
-                  <input type="text" id="form3Example9" class="form-control form-control-lg" />
-                  <label class="form-label" for="form3Example9">DOB</label>
-                </div>
-
-                <div data-mdb-input-init class="form-outline mb-4">
-                  <input type="text" id="form3Example90" class="form-control form-control-lg" />
-                  <label class="form-label" for="form3Example90">Pincode</label>
-                </div>
-
-                <div data-mdb-input-init class="form-outline mb-4">
-                  <input type="text" id="form3Example99" class="form-control form-control-lg" />
-                  <label class="form-label" for="form3Example99">Course</label>
-                </div>
-
-                <div data-mdb-input-init class="form-outline mb-4">
-                  <input type="text" id="form3Example97" class="form-control form-control-lg" />
-                  <label class="form-label" for="form3Example97">Email ID</label>
-                </div>
-
-                <div class="d-flex justify-content-end pt-3">
-                  <button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-light btn-lg">Reset all</button>
-                  <button  type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-warning btn-lg ms-2">Submit form</button>
-                </div>
-
-              </div>
-            </div>
-          </div>
+<div class="container">
+  <div class="card bg-dark" >
+    <div class="card-body">
+      <h5 class="card-title">Sign Up</h5>
+      <form>
+        <div class="mb-3">
+          <label for="userName" class="form-label">User Name</label>
+          <input type="text" class="form-control" id="userName">
         </div>
-      </div>
+        <div class="mb-3">
+          <label for="password" class="form-label">Password</label>
+          <input type="text" class="form-control" id="password">
+        </div>
+        <div class="mb-3">
+          <label for="fullname" class="form-label">FullName</label>
+          <input type="text" class="form-control" id="fullname">
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="text" class="form-control" id="email">
+        </div>
+        <div class="mb-3">
+          <label for="phoneNumber" class="form-label">Phone Number</label>
+          <input type="text" class="form-control" id="phoneNumber">
+        </div>
+        <div class="mb-3">
+          <label for="activated" class="form-label">Activated</label>
+          <select id="activated">
+            <option value="yes">Yes</option>
+            <option value="no" >No</option>
+          </select>
+        </div>
+
+
+        <button type="submit" class="btn btn-primary submit-btn">Submit</button>
+      </form>
     </div>
   </div>
-</section>
-
-
-
-
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-        crossorigin="anonymous"></script>
-    <script src="node_modules/angular/angular.min.js"></script>
-    <script src="bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://kit.fontawesome.com/c22bed0de0.js" crossorigin="anonymous"></script>
-    <script src="node_modules/angular/angular.route.min.js"></script>
-    <script src="js/app.js"></script>
-
+</div>
 </body>
 </html>
